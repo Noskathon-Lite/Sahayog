@@ -4,6 +4,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import Link from 'next/link';
 
 export default function UserDemand() {
   return (
@@ -21,10 +22,11 @@ export default function UserDemand() {
         <Button/> 
     </div>
 
- 
+ <Link href= {'/cost'}>
         <Button style={{display:'flex',justifyContent:'center'}} variant="contained" size="small">
        OK
           </Button>
+ </Link>
           </div>
          
     </Box>
