@@ -12,16 +12,16 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-
-
 import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 import { MenuItem } from '@mui/material';
-
+import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
+
 const drawerWidth = 240;
 
 export default function NavBar() {
@@ -30,13 +30,14 @@ export default function NavBar() {
       <CssBaseline />
       <div style={{display:'flex', justifyContent:'space-between'}}>
       <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} >
-        <Toolbar style={{display:'flex',justifyContent:'flex-end'}} >
-          <MenuItem>
-            <div>
-            User Profile
-           <AccountCircleIcon/>
+        <Toolbar style={{display:'flex',justifyContent:'flex-end',gap:'20px'}} >
+          
+            <div >
+            <NotificationsIcon/>
             </div>
-            </MenuItem>
+            <div>
+            <AccountCircleIcon/>
+            </div>
            
         </Toolbar>
       </AppBar>
