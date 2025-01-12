@@ -1,10 +1,10 @@
 "use client";
-import SignUp from "@/components/Signup";
+import SignUp from "@/components/SignUp";
 export default function details()
 {
  
     return(
-        <div>
+        <div style={{display:'flex',justifyContent:'center'}}>
 <SignUp/>
 </div>
     )
