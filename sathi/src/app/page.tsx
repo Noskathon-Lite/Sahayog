@@ -10,13 +10,13 @@ export default function Home(){
     }}>
 
       <Link href={'/profile'}>
-      <EmployeeCard image='/Girl1.jpeg' name='Sahara Ghimire'/>
+      <EmployeeCard image='/Girl2.jpeg' name='Sahara Ghimire'/>
       </Link>
-      <EmployeeCard image='/male1.jpeg' name='Naran Acharya'/>
+      <EmployeeCard image='/male2.jpeg' name='Naran Acharya'/>
       <EmployeeCard image='/Girl2.jpeg' name='Bineeta Khanal'/>
-      <EmployeeCard image='/Girl3.jpeg' name='Sneha Khanal'/>
+      <EmployeeCard image='/Girl2.jpeg' name='Sneha Khanal'/>
       <EmployeeCard image='/male2.jpeg' name='Aadesh Khanal'/>
-      <EmployeeCard image='/male3.jpeg' name='Sonup Sharma'/>
+      <EmployeeCard image='/male2.jpeg' name='Sonup Sharma'/>
     </div>
   )
 }
