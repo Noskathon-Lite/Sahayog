@@ -1,6 +1,6 @@
 import EmployeeCard from "@/components/EmployeeCard";
 
-export default function(){
+export default function Home(){
   return (
     <div style={{display:'flex',width:'100%',gap:10,rowGap:40, justifyContent:'space-evenly',flexWrap:'wrap', alignItems:'flex-start'}}>
       <EmployeeCard image='/Girl2.jpeg' name='Sahara Ghimire'/>
