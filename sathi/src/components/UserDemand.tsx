@@ -3,6 +3,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 export default function UserDemand() {
   return (
@@ -12,10 +13,20 @@ export default function UserDemand() {
       noValidate
       autoComplete="off"
     >
-      <TextField id="outlined-basic" label="Date to arrive" variant="outlined" />
-      <TextField id="outlined-basic" label="Time to arrive" variant="outlined" />
-      <TextField id="outlined-basic" label="Total time to spend" variant="outlined" />
-    
+      <div>
+      <div >
+        Date to arrive<TextField id="outlined-basic" label="" variant="outlined" />
+        Time to arrive<TextField id="outlined-basic" label="" variant="outlined" />
+        Total time to spend<TextField id="outlined-basic" label="" variant="outlined" />
+        <Button/> 
+    </div>
+
+ 
+        <Button style={{display:'flex',justifyContent:'center'}} variant="contained" size="small">
+       OK
+          </Button>
+          </div>
+         
     </Box>
   );
 }
