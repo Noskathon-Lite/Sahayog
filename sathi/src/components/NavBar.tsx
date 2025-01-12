@@ -24,7 +24,7 @@ import { MenuItem } from '@mui/material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 const drawerWidth = 240;
 
-export default function NavBar() {
+export default function NavBar(prop:any) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -85,7 +85,7 @@ export default function NavBar() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
-        
+        {prop.children}
       </Box>
     </Box>
   );
