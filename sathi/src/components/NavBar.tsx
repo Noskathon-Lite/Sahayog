@@ -7,15 +7,11 @@ import AppBar from '@mui/material/AppBar';
 import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
-import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-
 
 
 import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
@@ -23,24 +19,29 @@ import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import { MenuItem } from '@mui/material';
 
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 const drawerWidth = 240;
 
 export default function NavBar() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
-        <Toolbar>
-          <Typography variant="h6" noWrap component="div">
-           
-            <div style={{display:'flex', justifyContent:'flex-end',alignItems:'flex-end'}}>
-           <AccountBoxIcon/>User Profile
+      <div style={{display:'flex', justifyContent:'space-between'}}>
+      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} >
+        <Toolbar style={{display:'flex',justifyContent:'flex-end'}} >
+          <MenuItem>
+            <div>
+            User Profile
+           <AccountCircleIcon/>
             </div>
-          </Typography>
+            </MenuItem>
+           
         </Toolbar>
       </AppBar>
+      </div>
+
       <Drawer
         variant="permanent"
         sx={{

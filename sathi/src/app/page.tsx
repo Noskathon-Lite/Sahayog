@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import EmployeeCard from "@/components/EmployeeCard";
 
 export default function Home(){
@@ -10,6 +11,17 @@ export default function Home(){
       <EmployeeCard image='/male2.jpeg' name='Aadesh Khanal'/>
       <EmployeeCard image='/male2.jpeg' name='Sonup Sharma'/>
 
+=======
+
+
+import NavBar from "@/components/NavBar";
+
+export default function Home(){
+  return (
+    <div>
+      <NavBar/>
+>>>>>>> d4fbedbe1312e2f320925212d42c2bc65b0396ae
     </div>
   )
 }
+
