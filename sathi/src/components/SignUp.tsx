@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react"; // React and useState for state management
+import React, { useState } from "react"; 
 import {
   Box,
   Button,
@@ -8,8 +8,9 @@ import {
   FormControl,
   InputAdornment,
   IconButton,
-} from "@mui/material"; // MUI components
-import { Visibility, VisibilityOff } from "@mui/icons-material"; // Icons for password visibility toggle
+} from "@mui/material"; 
+import { Visibility, VisibilityOff } from "@mui/icons-material"; 
+import InputLabel from '@mui/material/InputLabel';
 
 export default function SignUp() {
     return (
@@ -25,13 +26,19 @@ export default function SignUp() {
         <h1>Sign-up</h1>
     </div>
         <div>
-        Name:<TextField id="outlined-basic" label="Name" variant="outlined" />
-        Emai:<TextField id="outlined-basic" label="Email" variant="outlined" />
-        Password:<TextField id="outlined-basic" label="Password" variant="outlined" />
+       <TextField id="outlined-basic" label=" First Name" variant="outlined" />
+        <TextField id="outlined-basic" label="Last Name" variant="outlined" />
+      <TextField id="outlined-basic" label="Email" variant="outlined" />
+      <TextField id="outlined-basic" label="Phone no." variant="outlined" />
+      <TextField id="outlined-basic" label="Password" variant="outlined" />
+      
+     
         </div>
         </Typography>
         </Box>
         
       </Box>
     );
-  }
+}
+
+

@@ -1,5 +1,6 @@
 "use client";
 import SignUp from "@/components/SignUp";
+import PassWord from "@/components/SignUp";
 export default function details()
 {
  
@@ -7,6 +8,7 @@ export default function details()
         <div style={{display:'flex',justifyContent:'center'}}>
 <SignUp/>
 </div>
+
     )
     ;
 }
