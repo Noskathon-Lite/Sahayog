@@ -20,6 +20,7 @@ import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 import { MenuItem } from '@mui/material';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Link from 'next/link';
 
 
 const drawerWidth = 240;
