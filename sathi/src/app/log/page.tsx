@@ -1,9 +1,11 @@
-import { Login } from "@mui/icons-material";
+import LogIn from "@/components/LogIn";
+
+
 
 export default function log(){
     return(
         <div>
-            <Login/>
+            <LogIn/>
         </div>
     )
 }
