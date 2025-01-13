@@ -31,14 +31,16 @@ export default function NavBar(prop:any) {
       <CssBaseline />
       <div style={{display:'flex', justifyContent:'space-between'}}>
       <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} >
-        <Toolbar style={{display:'flex',justifyContent:'flex-end',gap:'20px'}} >
-          
-            <div >
+   
+        <Toolbar style={{display:'flex',justifyContent:'space-between',alignItems: 'center'}} >
+        <div>
+    <img src="/logo.png" alt="Logo" style={{ height: '40px' }} />
+  </div>
+            <div style={{ display: 'flex', gap: '20px' }}>
             <NotificationsIcon/>
-            </div>
-            <div>
             <AccountCircleIcon/>
             </div>
+          
            
         </Toolbar>
       </AppBar>

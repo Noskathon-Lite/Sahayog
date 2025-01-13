@@ -48,11 +48,7 @@ export default function SignUp() {
     <Typography>
       Already have an account?
     </Typography>
-    <Typography>
-    <Link href={'/log'}>
-      login
-      </Link>
-    </Typography>
+    
    
 </div>
 </div>
