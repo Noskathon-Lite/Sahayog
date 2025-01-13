@@ -36,6 +36,27 @@ export default function Home(){
       image: '/male3.jpeg',
       type:'Celebration'
     },
+    {
+      name: 'Rajan KC',
+      image: '/male4.jpeg',
+      type:'Celebration'
+    },
+    {
+      name: 'Jeevan Shrestha',
+      image: '/male5.jpeg',
+      type:'Celebration'
+    },
+    {
+      name: 'Priya Singh',
+      image: '/girl4.jpeg',
+      type:'Celebration'
+    },
+    {
+      name: 'David Khanal',
+      image: '/male6.jpeg',
+      type:'Celebration'
+    },
+    
   ]
 
   return (

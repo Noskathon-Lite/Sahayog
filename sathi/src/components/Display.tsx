@@ -25,9 +25,11 @@ export default function Display() {
 
   return (
     <React.Fragment>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
       <Button variant="outlined" onClick={handleClickOpen}>
         Total Amount
       </Button>
+      </div>
       <Dialog
         fullScreen={fullScreen}
         open={open}

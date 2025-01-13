@@ -19,7 +19,8 @@ export default function EmployeeInfo(prop:any) {
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" style={{fontSize:20}}>
+          <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
+          <Typography gutterBottom variant="h5" component="div" style={{fontSize:20,display:'flex',alignItems:'center'}}>
            Name:{prop.name}
            <br/>
            Age:{prop.age}
@@ -32,11 +33,13 @@ export default function EmployeeInfo(prop:any) {
            <br/>
            Qualification:{prop.qualification}
           </Typography>
+          
 <Typography>
 <Link href={'/form'}>
      <Button variant="contained">OK</Button>
 </Link>
 </Typography>
+</div>
        </CardContent>
       </CardActionArea>
     </Card>

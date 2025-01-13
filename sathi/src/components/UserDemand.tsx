@@ -23,7 +23,7 @@ export default function UserDemand() {
     </div>
 
  <Link href= {'/cost'}>
-        <Button style={{display:'flex',justifyContent:'center'}} variant="contained" size="small">
+        <Button style={{display:'flex',justifyContent:'center',alignSelf:'auto'}} variant="contained" size="small">
        OK
           </Button>
  </Link>
