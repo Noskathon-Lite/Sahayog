@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react"; 
+import Link from "next/link";
+import link from "ne"
 import {
   Box,
   Button,
@@ -11,34 +13,61 @@ import {
 } from "@mui/material"; 
 import { Visibility, VisibilityOff } from "@mui/icons-material"; 
 import InputLabel from '@mui/material/InputLabel';
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import { styled } from '@mui/material/styles';
+
 
 export default function SignUp() {
     return (
       <Box
         component="form"
-        sx={{ '& > :not(style)': { m: 1, width: '25ch' } }}
+        sx={{ '& > :not(style)': { m: 1, width: '50ch' } }}
         noValidate
         autoComplete="off"
+        style={{display:'flex',justifyContent:'center'}}
       >
-        <Box>
-<Typography>
-    <div style={{display:'flex',justifyContent:'center'}}>
+        <Box style={{display:'flex',justifyContent:'center'}}>
+
+   <div style={{display:'flex',justifyContent:'center',padding:20 ,margin:20}}>
+    <div style={{textAlign:'center'}}>
         <h1>Sign-up</h1>
-    </div>
-        <div>
-       <TextField id="outlined-basic" label=" First Name" variant="outlined" />
-        <TextField id="outlined-basic" label="Last Name" variant="outlined" />
-      <TextField id="outlined-basic" label="Email" variant="outlined" />
-      <TextField id="outlined-basic" label="Phone no." variant="outlined" />
-      <TextField id="outlined-basic" label="Password" variant="outlined" />
-      
+  
+
+        <div  >
+       <TextField id="outlined-basic" label=" First Name" variant="outlined" sx={{ mb: 2 }} />
+        <TextField id="outlined-basic" label="Last Name" variant="outlined" sx={{ mb: 2 }} />
+      <TextField id="outlined-basic" label="Email" variant="outlined"  sx={{ mb: 2 }} />
+      <TextField id="outlined-basic" label="Phone no." variant="outlined" sx={{ mb: 2 }}/>
      
-        </div>
-        </Typography>
+      <TextField id="outlined-basic" label="Upload Photo." variant="outlined" sx={{ mb: 2 }}/>
+      <TextField id="outlined-basic" label="Upload Citizenship Photo" variant="outlined" sx={{ mb: 2 }}/>
+      <TextField id="outlined-basic" label="Upload CPR File" variant="outlined" sx={{ mb: 2 }}/>
+     
+      </div>
+    <Typography>
+      Already have an account?
+    </Typography>
+    <link href='/log'>
+    <Typography>
+      login
+    </Typography>
+    </link>
+</div>
+</div>
+       
+
         </Box>
         
       </Box>
     );
 }
+
+  
+
+ 
+
+
+  
+
 
 

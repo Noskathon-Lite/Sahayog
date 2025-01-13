@@ -5,7 +5,7 @@ export default function details()
 {
  
     return(
-        <div style={{display:'flex',justifyContent:'center'}}>
+        <div style={{display:'flex',justifyContent:'center',marginBottom:30}}>
 <SignUp/>
 </div>
 
