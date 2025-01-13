@@ -1,12 +1,6 @@
 "use client";
 import React, { useState } from "react"; 
-<<<<<<< HEAD
 import Link from "next/link";
-=======
-import Link from '@mui/material/Link';
-
-
->>>>>>> b9ee5310aef56633f3e9a9f5fe2554231e8ef079
 import {
   Box,
   Button,
@@ -52,17 +46,12 @@ export default function SignUp() {
     <Typography>
       Already have an account?
     </Typography>
-<<<<<<< HEAD
     <Typography>
       <Link href='/log'>
       login
       </Link>
     </Typography>
   
-=======
-    
-   
->>>>>>> b9ee5310aef56633f3e9a9f5fe2554231e8ef079
 </div>
 </div>
        

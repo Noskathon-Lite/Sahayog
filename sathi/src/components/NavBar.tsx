@@ -27,18 +27,20 @@ const drawerWidth = 240;
 
 export default function NavBar(prop:any) {
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex'}}>
       <CssBaseline />
       <div style={{display:'flex', justifyContent:'space-between'}}>
       <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} >
    
         <Toolbar style={{display:'flex',justifyContent:'space-between',alignItems: 'center'}} >
         <div>
-    <img src="/logo.png" alt="Logo" style={{ height: '40px' }} />
+    <img src="/logo.png" alt="Logo" style={{ height: '60px',width: '70px' }} />
   </div>
             <div style={{ display: 'flex', gap: '20px' }}>
             <NotificationsIcon/>
+            <Link href='/sign'>
             <AccountCircleIcon/>
+            </Link>
             </div>
           
            
