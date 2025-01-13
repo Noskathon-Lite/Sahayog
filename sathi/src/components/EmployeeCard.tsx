@@ -7,7 +7,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 
 export default function EmployeeCard(prop:any) {
   return (
-    <Card sx={{ height:300, width:300 }}>
+    <Card sx={{ height:230, width:250 }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -15,7 +15,7 @@ export default function EmployeeCard(prop:any) {
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" style={{fontSize:40}}>
+          <Typography gutterBottom variant="h5" component="div" style={{fontSize:20,textAlign:'center'}}>
             {prop.name}
           </Typography>
         </CardContent>

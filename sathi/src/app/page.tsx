@@ -8,28 +8,55 @@ export default function Home(){
   const data = [
     {
       name: 'Rita BK',
-      image: '/Girl1.jpeg'
+      image: '/Girl1.jpeg',
+      type:'Lunch'
     },
     {
       name: 'Naran Acharya',
-      image: '/male1.jpeg'
+      image: '/male1.jpeg',
+      type:'Lunch'
     },
     {
       name: 'Sneha Khatri',
-      image: '/Girl3.jpeg'
+      image: '/Girl3.jpeg',
+      type:'Lunch'
     },
     {
       name: 'Shreya Magar',
-      image: '/Girl2.jpeg'
+      image: '/Girl2.jpeg',
+      type:'Lunch'
     },
     {
       name: 'Sonup Poudel',
-      image: '/male2.jpeg'
+      image: '/male2.jpeg',
+      type:'Celebration'
     },
     {
       name: 'Aadesh Khanal',
-      image: '/male3.jpeg'
+      image: '/male3.jpeg',
+      type:'Celebration'
     },
+    {
+      name: 'Rajan KC',
+      image: '/male4.jpeg',
+      type:'Celebration'
+    },
+    {
+      name: 'Jeevan Shrestha',
+      image: '/male5.jpeg',
+      type:'Celebration'
+    },
+    {
+      name: 'Priya Singh',
+      image: '/girl4.jpeg',
+      type:'Celebration'
+    },
+    {
+      name: 'David Khanal',
+      image: '/male6.jpeg',
+      type:'Celebration'
+    },
+    
   ]
 
   return (
