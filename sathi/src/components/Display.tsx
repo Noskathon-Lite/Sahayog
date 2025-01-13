@@ -8,6 +8,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import Link from 'next/link';
 
 export default function Display() {
   const [open, setOpen] = React.useState(false);
@@ -41,9 +42,11 @@ export default function Display() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
+          <Link href='/sign'>
           <Button autoFocus onClick={handleClose}>
             OK
           </Button>
+          </Link>
           <Button onClick={handleClose} autoFocus>
             Cancel
           </Button>

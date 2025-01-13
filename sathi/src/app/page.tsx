@@ -1,22 +1,48 @@
+'use client'
 import EmployeeCard from "@/components/EmployeeCard";
 import Root from "@/components/Root";
 import Link from "next/link";
 
 export default function Home(){
+
+  const data = [
+    {
+      name: 'Rita BK',
+      image: '/Girl1.jpeg'
+    },
+    {
+      name: 'Naran Acharya',
+      image: '/male1.jpeg'
+    },
+    {
+      name: 'Sneha Khatri',
+      image: '/Girl3.jpeg'
+    },
+    {
+      name: 'Shreya Magar',
+      image: '/Girl2.jpeg'
+    },
+    {
+      name: 'Sonup Poudel',
+      image: '/male2.jpeg'
+    },
+    {
+      name: 'Aadesh Khanal',
+      image: '/male3.jpeg'
+    },
+  ]
+
   return (
     // <div style={{display:'flex', width:'100%',overflow:'hidden'}}>
     <div style={{display:'flex',width:'100%',gap:10,rowGap:40, justifyContent:'space-evenly',flexWrap:'wrap', alignItems:'flex-start', overflow:'hidden',
       objectFit:'cover'
     }}>
 
-      <Link href={'/profile'}>
-      <EmployeeCard image='/Girl2.jpeg' name='Sahara Ghimire'/>
-      </Link>
-      <EmployeeCard image='/male2.jpeg' name='Naran Acharya'/>
-      <EmployeeCard image='/Girl2.jpeg' name='Bineeta Khanal'/>
-      <EmployeeCard image='/Girl2.jpeg' name='Sneha Khanal'/>
-      <EmployeeCard image='/male2.jpeg' name='Aadesh Khanal'/>
-      <EmployeeCard image='/male2.jpeg' name='Sonup Sharma'/>
+      {data.map((item, key) => {
+        return <Link key={key} href={{ pathname: '/profile', query: {name: item.name, image: item.image} }}>
+        <EmployeeCard image={item.image} name={item.name}/>
+        </Link>
+      })}
     </div>
   )
 }

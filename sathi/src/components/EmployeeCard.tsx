@@ -7,11 +7,10 @@ import CardActionArea from '@mui/material/CardActionArea';
 
 export default function EmployeeCard(prop:any) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ height:300, width:300 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
           image={prop.image}
           alt="green iguana"
         />
